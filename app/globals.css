@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-ink text-slate-200 antialiased;
+}
+
+::selection {
+  background: rgba(79, 143, 255, 0.35);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0a0f;
+}
+::-webkit-scrollbar-thumb {
+  background: #1f2433;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #4f8fff;
+}
+
+/* Gradient fallback shown when 3D is disabled (mobile / reduced motion) */
+.scene-fallback {
+  background:
+    radial-gradient(ellipse 80% 50% at 50% -10%, rgba(79, 143, 255, 0.18), transparent),
+    radial-gradient(ellipse 60% 40% at 80% 110%, rgba(79, 143, 255, 0.08), transparent),
+    #0a0a0f;
+}
+
+/* Faint blueprint grid behind the 3D canvas */
+.grid-bg {
+  background-image:
+    linear-gradient(rgba(148, 163, 184, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(148, 163, 184, 0.045) 1px, transparent 1px);
+  background-size: 56px 56px;
+  -webkit-mask-image: radial-gradient(ellipse 80% 55% at 50% 0%, black 30%, transparent 75%);
+  mask-image: radial-gradient(ellipse 80% 55% at 50% 0%, black 30%, transparent 75%);
+}
+
+/* Shared card style — hover glow uses box-shadow only (cheap) */
+.card {
+  @apply rounded-lg border border-slate-800 bg-surface/80 transition-all duration-300;
+}
+.card:hover {
+  border-color: rgba(79, 143, 255, 0.4);
+  box-shadow:
+    0 0 32px -10px rgba(79, 143, 255, 0.35),
+    inset 0 1px 0 rgba(255, 255, 255, 0.03);
+}
