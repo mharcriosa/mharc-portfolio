@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Mharc Riosa — Resume</title>
+<style>
+  @page { size: A4; margin: 0; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body {
+    font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+    font-size: 10pt;
+    line-height: 1.45;
+    color: #1e293b;
+    background: #fff;
+    padding: 42px 48px;
+  }
+
+  /* ---------- header ---------- */
+  header { border-bottom: 2px solid #1e293b; padding-bottom: 12px; }
+  h1 {
+    font-size: 22pt;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: #0f172a;
+  }
+  .subtitle {
+    font-size: 11pt;
+    font-weight: 600;
+    color: #2563eb;
+    margin-top: 2px;
+  }
+  .contact {
+    margin-top: 7px;
+    font-size: 8.5pt;
+    color: #475569;
+  }
+  .contact span { margin-right: 14px; }
+  .contact b { color: #334155; font-weight: 600; }
+
+  /* ---------- sections ---------- */
+  section { margin-top: 16px; }
+  h2 {
+    font-size: 9.5pt;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #0f172a;
+    border-bottom: 1px solid #cbd5e1;
+    padding-bottom: 3px;
+    margin-bottom: 8px;
+  }
+
+  /* ---------- experience ---------- */
+  .job { margin-bottom: 12px; }
+  .job:last-child { margin-bottom: 0; }
+  .job-head { display: flex; justify-content: space-between; align-items: baseline; }
+  .job-head .role { font-size: 10.5pt; font-weight: 700; color: #0f172a; }
+  .job-head .period { font-size: 8.5pt; color: #64748b; white-space: nowrap; }
+  .company { font-size: 9.5pt; color: #2563eb; font-weight: 600; margin-top: 1px; }
+  .clients { font-size: 8pt; color: #64748b; margin-top: 2px; }
+  ul { margin: 5px 0 0 16px; }
+  li { margin-bottom: 2.5px; }
+
+  /* ---------- skills ---------- */
+  .skill-row { display: flex; margin-bottom: 5px; }
+  .skill-row .sk-label {
+    flex: 0 0 130px;
+    font-size: 8pt;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #475569;
+    padding-top: 1px;
+  }
+  .skill-row .sk-items { flex: 1; color: #334155; }
+
+  /* ---------- systems ---------- */
+  .systems-list { column-count: 3; column-gap: 18px; margin-left: 0; list-style: none; }
+  .systems-list li {
+    break-inside: avoid;
+    margin-bottom: 3px;
+    padding-left: 12px;
+    position: relative;
+  }
+  .systems-list li::before {
+    content: "▹";
+    position: absolute;
+    left: 0;
+    color: #2563eb;
+  }
+  .also { font-size: 8.5pt; color: #64748b; margin-top: 6px; }
+
+  /* ---------- education ---------- */
+  .edu { margin-bottom: 8px; }
+  .edu:last-child { margin-bottom: 0; }
+  .edu-head { display: flex; justify-content: space-between; align-items: baseline; }
+  .edu-head .school { font-weight: 700; color: #0f172a; }
+  .edu-head .period { font-size: 8.5pt; color: #64748b; white-space: nowrap; }
+  .program { font-size: 9pt; color: #475569; margin-top: 1px; }
+
+  .two-col { display: flex; gap: 24px; }
+  .two-col > div { flex: 1; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>MHARC RIOSA</h1>
+  <p class="subtitle">Software Engineer II — Frontend / Full-Stack Web Development</p>
+  <p class="contact">
+    <span><b>Email</b> 0526mharc.riosa@gmail.com</span>
+    <span><b>GitHub</b> github.com/mharcriosa</span>
+    <span><b>Portfolio</b> mharcriosa.github.io/mharc-portfolio</span>
+    <span><b>Location</b> Metro Manila / Rizal, Philippines</span>
+  </p>
+</header>
+
+<section>
+  <h2>SUMMARY</h2>
+  <p>
+    Frontend-focused software engineer with over 4 years of experience building
+    enterprise web applications using Vue.js, Nuxt.js, and Vuetify. Engineers
+    responsive interfaces that elevate user engagement and integrate seamlessly
+    with Laravel-powered REST APIs. Collaborates with Agile teams to resolve
+    intricate issues, contributes backend development, and supports systems
+    end-to-end — from data grids and multi-level approval workflows to automated
+    processes and manual testing. Currently building a hospital-wide Human
+    Resource Management System (HRMS) serving the National Kidney and Transplant
+    Institute (NKTI) and Eastern Visayas Medical Center (EVMC).
+  </p>
+</section>
+
+<section>
+  <h2>EXPERIENCE</h2>
+
+  <div class="job">
+    <div class="job-head">
+      <span class="role">Software Engineer II</span>
+      <span class="period">May 2022 — Present</span>
+    </div>
+    <p class="company">Massive Integrated Tech Solutions Inc.</p>
+    <p class="clients">
+      Clients: NKTI — National Kidney and Transplant Institute · EVMC — Eastern Visayas Medical Center
+    </p>
+    <ul>
+      <li>Developing the NKTI Human Resource Management System (HRMS) supporting hospital-wide operations.</li>
+      <li>Building responsive Vue.js / Nuxt.js / Vuetify applications — data grids with expandable rows, inline editing, and large dataset handling.</li>
+      <li>Maintaining Laravel backend services: RESTful APIs, complex business logic, and database transactions.</li>
+      <li>Designing multi-level approval workflows, automated processes, and data import/export and reporting tools.</li>
+      <li>Onboarding a new client, EVMC, onto the HRMS platform — configuring modules and workflows for their requirements.</li>
+      <li>Executing full lifecycle development — specifications, verification plans, deployment tooling, and documentation.</li>
+      <li>Serving as a subject matter expert across HRMS modules, collaborating with engineers, designers, QA, and project coordinators.</li>
+      <li>Providing technical support, client walkthroughs, training, and continuous system improvement.</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-head">
+      <span class="role">Junior Software Engineer I (Front-End)</span>
+      <span class="period">Feb 2022 — May 2022 · OJT (500 hrs)</span>
+    </div>
+    <p class="company">Suiterus Technologies Inc.</p>
+    <ul>
+      <li>Developed frontend components and learned enterprise web development practices.</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-head">
+      <span class="role">Work Immersion</span>
+      <span class="period">2018 · SHS (80 hrs)</span>
+    </div>
+    <p class="company">Electrical Equipment &amp; System Integration Inc.</p>
+    <ul>
+      <li>Completed senior high school industry immersion program.</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2>SYSTEMS BUILT</h2>
+  <ul class="systems-list">
+    <li>Strategic Performance Management System (SPMS)</li>
+    <li>Job Portal &amp; Recruitment System</li>
+    <li>Human Resource Information System (HRIS)</li>
+    <li>Talent Management System</li>
+    <li>Timekeeping Module</li>
+    <li>SALN Module</li>
+    <li>Employee Portal</li>
+  </ul>
+  <p class="also">
+    Also built into the platform: Payroll · Leave Management · Locator Slip ·
+    PDS (Personal Data Sheet) · Service Record · Loan &amp; Refund · Learning &amp;
+    Development · Promotion · HR Exit · Minutes of Meeting · Organizational
+    Structure · Mentorship
+  </p>
+</section>
+
+<section>
+  <h2>SKILLS</h2>
+  <div class="skill-row">
+    <span class="sk-label">FRONTEND</span>
+    <span class="sk-items">HTML · CSS · JavaScript · Vue.js · Nuxt.js · Vuetify</span>
+  </div>
+  <div class="skill-row">
+    <span class="sk-label">BACKEND &amp; DATABASE</span>
+    <span class="sk-items">PHP · Laravel 8 · Firebase · MySQL</span>
+  </div>
+  <div class="skill-row">
+    <span class="sk-label">TOOLS &amp; PROCESS</span>
+    <span class="sk-items">Git · GitLab · GitHub · Agile / Scrum</span>
+  </div>
+  <div class="skill-row">
+    <span class="sk-label">AI &amp; PRODUCTIVITY</span>
+    <span class="sk-items">AI-Assisted Development · Prompt Engineering · ChatGPT / LLM Tools · GitHub Copilot · Cascade (Windsurf)</span>
+  </div>
+  <div class="skill-row">
+    <span class="sk-label">OTHER</span>
+    <span class="sk-items">Manual QA / Testing · Project Planning · Documentation · Web Development</span>
+  </div>
+</section>
+
+<section>
+  <h2>EDUCATION</h2>
+  <div class="edu">
+    <div class="edu-head">
+      <span class="school">Our Lady of Fatima University — Antipolo</span>
+      <span class="period">2018 — 2022</span>
+    </div>
+    <p class="program">Bachelor of Science in Information Technology</p>
+  </div>
+  <div class="edu">
+    <div class="edu-head">
+      <span class="school">Nuestra Señora de Guia Academy of Marikina</span>
+      <span class="period">2016 — 2018</span>
+    </div>
+    <p class="program">ICT (Information Computer Technology) Strand</p>
+  </div>
+</section>
+
+</body>
+</html>
